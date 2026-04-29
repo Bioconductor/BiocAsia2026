@@ -28,7 +28,7 @@ pagerSize = 10
     identifier="schedule"
     name = "Schedule"
     url  = "/schedule/"
-    weight = 20
+    weight = 19
 
 # [[menu.main]]
 #   identifier="socialnight"
@@ -43,9 +43,9 @@ pagerSize = 10
 #    weight = 22
 
 [[menu.main]]
-    identifier="Organizers"
-    name = "Organizers"
-    url  = "/organizers/"
+    identifier="Contact"
+    name = "Contact"
+    url  = "/contact/"
     weight = 20
 
 [[menu.main]]
@@ -59,6 +59,13 @@ pagerSize = 10
     parent = "about"
     name = "Key Dates"
     url  = "/submissions/"
+    weight = 6
+
+[[menu.main]]
+    identifier="Organizers"
+    parent = "about"
+    name = "Team"
+    url  = "/Organizers/"
     weight = 6
 
 # [[menu.main]]

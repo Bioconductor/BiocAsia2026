@@ -102,15 +102,15 @@ SAiGENCI, Australia<br>
 
 <div class="contact-card">
 <strong>Stevie Pederson</strong><br>
-Postdoctoral Research Fellow, Black Ochre Data Labs<br>
-Indigenous Genomics, The Kids Research Institute, Australia<br>
+Bioinformatician, Indigenous Genomics team<br>
+The Kids Research Institute, Australia<br>
 <a href="mailto:stevie.pederson@telethonkids.org.au">stevie.pederson@telethonkids.org.au</a>
 </div>
 
 <div class="contact-card">
 <strong>Malvika Kharbanda</strong><br>
-PhD Candidate<br>
-SAiGENCI, The University of Adelaide, Australia<br>
+PhD Candidate, Computational Systems Oncology<br>
+SAiGENCI, Australia<br>
 <a href="mailto:malvika.kharbanda@adelaide.edu.au">malvika.kharbanda@adelaide.edu.au</a>
 </div>
 

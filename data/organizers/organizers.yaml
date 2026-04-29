@@ -1,0 +1,76 @@
+- name: Ellis Patrick
+  image: EllisPatrick.png
+  link: https://profiles.sydney.edu.au/ellis.patrick
+  role: Associate Professor
+  org: The University of Sydney, Westmead Institute for Medical Research
+  country: Australia
+
+- name: Emma Gail
+  image: EmmaGail.jpeg
+  link: 
+  role: Training Lead
+  org: Melbourne Bioinformatics
+  country: Australia
+
+- name: Kozo Nishida
+  image: KozoNishida.jpeg
+  link:
+  role:
+  org: RIKEN Center for Biosystems Dynamics Research
+  country: Japan
+
+- name: Lori (Shepherd) Kern
+  image: LoriShepherd.png
+  link: 
+  role: Bioconductor Core Team
+  org: Roswell Park Comprehensive Cancer Center
+  country: USA
+
+- name: Malvika Kharbanda
+  image: MalvikaKharbanda.jpeg
+  link: https://researchers.adelaide.edu.au/profile/malvika.kharbanda
+  role: PhD Candidate, Computational Systems Oncology 
+  org: SAiGENCI
+  country: Australia
+
+- name: Mansi Aggarwal
+  image: MansiAggarwal.jpeg
+  link: 
+  role: Bioinformatician
+  org: Mass Dynamics
+  country: Australia
+
+- name: Maria Doyle
+  image: MariaDoyle.png
+  link: 
+  role: Bioconductor Community Manager
+  org: University of Limerick
+  country: Ireland
+
+- name: Stefano Mangiola
+  image: StefanoMangiola.jpeg
+  link: https://researchers.adelaide.edu.au/profile/stefano.mangiola
+  role: Group Leader, Computational Cancer Immunogenomics
+  org: SAiGENCI
+  country: Australia
+
+- name: Stevie Pederson
+  image: SteviePederson.png
+  link: https://www.telethonkids.org.au/contact-us/our-people/p/stephen-stevie-pederson/
+  role: Bioinformatician, Indigenous Genomics team
+  org: The Kids Research Institute
+  country: Australia
+
+- name: Yashpal Ramakrishnaiah
+  image: YashpalRamakrishnaiah.jpeg
+  link: 
+  role: Postdoctoral Researcher
+  org: Monash University
+  country: Australia
+
+- name: Zuguang Gu
+  image: ZuguangGu.jpeg
+  link: https://jokergoo.github.io/about/
+  role: 
+  org: Shenzhen University of Advanced Technology
+  country: China

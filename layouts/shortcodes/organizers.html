@@ -1,0 +1,19 @@
+<div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px;">
+
+{{ range sort .Site.Data.organizers.organizers "name" }}
+  <div style="text-align: center; min-height: 280px;">
+    <img src="/img/organizers/{{ .image }}" alt="Photo of {{ .name }}" style="max-width:150px;height:150px;"><br>
+
+    {{ if .link }}
+      <a href="{{ .link }}" target="_blank" rel="noopener noreferrer"><b>{{ .name }}</b></a><br>
+    {{ else }}
+      <b>{{ .name }}</b><br>
+    {{ end }}
+
+    {{ if .role }}{{ .role }}<br>{{ end }}
+    {{ if .org }}{{ .org }}<br>{{ end }}
+    {{ if .country }}{{ .country }}{{ end }}
+  </div>
+{{ end }}
+
+</div>
