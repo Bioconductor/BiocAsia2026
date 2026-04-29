@@ -1,6 +1,6 @@
 +++
 title = "Contact"
-id = "contact"
+description = "Contact us"
 +++
 
 <style>

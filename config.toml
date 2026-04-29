@@ -180,7 +180,7 @@ pagerSize = 10
     contact_form_ajax = false
 
     about_us = "<p>Bioconductor confernces highlight current developments within and beyond the Bioconductor project.</p>"
-    copyright = "Copyright (c) 2020 - 2025, Bioconductor."
+    copyright = "Copyright (c) 2020 - 2026, Bioconductor."
 
     # Format dates with Go's time formatting
     date_format = "January 2, 2006"
