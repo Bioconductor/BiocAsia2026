@@ -30,6 +30,18 @@ pagerSize = 10
     url  = "/schedule/"
     weight = 19
 
+[[menu.main]]
+    identifier="workshopseoi"
+    name = "Workshop EOI"
+    url  = "/workshops-eoi/"
+    weight = 15
+
+# [[menu.main]]
+#    identifier="seminars"
+#    name = "Seminars"
+#    url  = "/seminars/"
+#    weight = 19
+
 # [[menu.main]]
 #   identifier="socialnight"
 #   name = "Networking Event"
