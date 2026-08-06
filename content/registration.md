@@ -3,7 +3,39 @@ title = "Registration"
 description = "Registration"
 +++
 
-### Coming soon
+- **Registration opens:** 17 July 2026 (now open)
+- **Early bird closes:** 2 September 2026
+- **Conference begins:** 16 November 2026 · RMIT University, Melbourne
+
+<a class="cta-button" href="https://iscb.swoogo.com/abacbs2026/begin" target="_blank" rel="noopener">Register Now</a>
+
+<div class="biocasia-note">
+BiocAsia 2026 is a satellite event held alongside the ABACBS 2026 conference. To attend BiocAsia, register for the main <strong>ABACBS 2026 conference</strong> and add <strong>BiocAsia</strong> as an add-on during registration (A$90).
+</div>
+
+## Registration rates (AUD)
+
+| Registration type | &nbsp; | Early bird (Member) | Early bird (Non-member) | Standard (Member) | Standard (Non-member) |
+|---|---|---|---|---|---|
+| Full | COMBINE Student Symposium | A$200 | A$250 | A$250 | A$300 |
+| Full | ABACBS Conference | A$470 | A$580 | A$570 | A$680 |
+| Full | ABACBS + COMBINE | A$540 | A$640 | A$640 | A$740 |
+| Full | SBEI | A$200 | A$250 | A$250 | A$300 |
+| Student | COMBINE Student Symposium | A$150 | A$200 | A$200 | A$250 |
+| Student | ABACBS Conference | A$330 | A$380 | A$370 | A$430 |
+| Student | ABACBS + COMBINE | A$380 | A$430 | A$420 | A$480 |
+| Student | SBEI | A$150 | A$200 | A$200 | A$250 |
+| EMCR / Postdoc | EMCR Postdoc | A$100 | A$150 | A$150 | A$200 |
+
+Early bird pricing closes 2 September 2026.
+
+### Add-ons
+
+- **BiocAsia** (add-on to any registration): A$90
+- **Workshops** (early bird / standard): A$90
+- **Conference Dinner** (18 November 2026): A$100
+
+Looking to submit a talk or a workshop? See the [Call for Abstracts](/call-for-abstracts/) and [Workshop EOI](/workshops-eoi/) pages.
 
 <!--
 ### Registration is now open for the BioC22 conference. You have two ticket options:

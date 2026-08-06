@@ -26,15 +26,28 @@ pagerSize = 10
 
 [[menu.main]]
     identifier="schedule"
+    parent = "about"
     name = "Schedule"
     url  = "/schedule/"
-    weight = 19
+    weight = 3
+
+[[menu.main]]
+    identifier="registration"
+    name = "Registration"
+    url  = "/registration/"
+    weight = 13
 
 [[menu.main]]
     identifier="workshopseoi"
     name = "Workshop EOI"
     url  = "/workshops-eoi/"
     weight = 15
+
+[[menu.main]]
+    identifier="callforabstracts"
+    name = "Call for Abstracts"
+    url  = "/call-for-abstracts/"
+    weight = 14
 
 # [[menu.main]]
 #    identifier="seminars"
@@ -56,9 +69,10 @@ pagerSize = 10
 
 [[menu.main]]
     identifier="Contact"
+    parent = "about"
     name = "Contact"
     url  = "/contact/"
-    weight = 20
+    weight = 7
 
 [[menu.main]]
     identifier = "about"

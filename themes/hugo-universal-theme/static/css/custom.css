@@ -8,3 +8,30 @@
 .box-simple {
   min-height: 230px;
 }
+
+.cta-button {
+  display: inline-block;
+  background-color: #2f6b57;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 18px 48px;
+  border-radius: 10px;
+  text-decoration: none;
+  margin: 20px 0;
+  box-shadow: 0px 4px 10px rgba(47,107,87,0.25);
+}
+
+.cta-button:hover {
+  background-color: #245444;
+  color: white;
+}
+
+.biocasia-note {
+  border: 2px solid #8bb39d;
+  border-radius: 12px;
+  background-color: #f3faf6;
+  padding: 18px 22px;
+  margin: 20px 0;
+  color: #456b5a;
+}

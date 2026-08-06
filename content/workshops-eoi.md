@@ -26,9 +26,9 @@ Workshops are a core, highly popular feature of the ABACBS annual meeting. They 
 
 ## Proposal Submission Requirements
 
-<a href="https://forms.office.com/r/r1n3au5Drz" target="_blank" rel="noopener">Click here to fill out the EOI Form</a>
+<a class="cta-button" href="https://forms.office.com/r/r1n3au5Drz" target="_blank" rel="noopener">Fill Out the EOI Form</a>
 
-If you are having trouble accessing the link, please copy and paste the following URL into your browser:
+If you are having trouble accessing the button above, please copy and paste the following URL into your browser:
 
 `https://forms.office.com/r/r1n3au5Drz`
 
