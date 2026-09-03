@@ -11,6 +11,11 @@ We invite abstract submissions from students, researchers, academics, and indust
 BiocAsia abstract submissions are handled together with the ABACBS/COMBINE abstract submission process — use the same submission form below and select BiocAsia as your event.
 </div>
 
+## Key Dates
+
+- **20 July 2026:** Abstract submissions open
+- **28 August 2026:** Abstract submission deadline
+
 ## Presenter Requirements
 
 The presenting author is required to present their work. Presenting authors must be registered participants. If the presenting author does not register, the abstract may be automatically withdrawn.
@@ -33,8 +38,3 @@ Accepted talks will follow an **oral talk format (15 minutes + 5 minutes Q&A)**.
 ## How to Submit
 
 <a class="cta-button" href="https://www.iscb.org/application?formId=51" target="_blank" rel="noopener">Submit Your Abstract</a>
-
-## Key Dates
-
-- **20 July 2026:** Abstract submissions open
-- **28 August 2026:** Abstract submission deadline

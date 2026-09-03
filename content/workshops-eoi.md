@@ -34,7 +34,9 @@ If you are having trouble accessing the button above, please copy and paste the 
 
 ### Due Date
 
-Please submit your EOI by **11:59 PM AEST on Friday, 21 August 2026**.
+Please submit your EOI by **11:59 PM AEST on Monday, 7 September 2026**.
+
+*Deadline extended.*
 
 ## Evaluation Criteria
 
