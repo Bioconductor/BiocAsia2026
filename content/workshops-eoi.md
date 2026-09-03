@@ -17,6 +17,11 @@ Workshops are a core, highly popular feature of the ABACBS annual meeting. They 
 - Compute infrastructure and cloud computing
 - Machine learning and AI in genomics
 
+## Key Dates
+
+- **9 July 2026:** Call for Workshop EOI opens
+- **7 September 2026:** Call for Workshop EOI closes, 11:59 PM AEST — *deadline extended*
+
 ## Workshop Format
 
 - **Dates:** 19 November 2026 (Afternoon Session) and 20 November 2026 (Full Day)
@@ -31,12 +36,6 @@ Workshops are a core, highly popular feature of the ABACBS annual meeting. They 
 If you are having trouble accessing the button above, please copy and paste the following URL into your browser:
 
 `https://forms.office.com/r/r1n3au5Drz`
-
-### Due Date
-
-Please submit your EOI by **11:59 PM AEST on Monday, 7 September 2026**.
-
-*Deadline extended.*
 
 ## Evaluation Criteria
 
