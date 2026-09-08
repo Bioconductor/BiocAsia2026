@@ -15,7 +15,8 @@ description = "Submissions"
     <li><b>July 17, 2026</b>: <a href="/registration/">Registration opens</a></li>
     <li style="text-decoration: line-through; opacity: 0.6;"><b>August 28, 2026</b>: <a href="/call-for-abstracts/" style="text-decoration: line-through;">Abstract submission deadline</a></li>
     <li style="text-decoration: line-through; opacity: 0.6;"><b>September 2, 2026</b>: <a href="/registration/" style="text-decoration: line-through;">Early bird registration closes</a></li>
-    <li><b>September 7, 2026</b>: <a href="/workshops-eoi/">Call for Workshop EOI closes</a></li>
+    <li style="text-decoration: line-through; opacity: 0.6;"><b>September 7, 2026</b>: <a href="/workshops-eoi/" style="text-decoration: line-through;">Call for Workshop EOI closes</a></li>
+    <li><b>October 9, 2026</b>: <a href="/travel-scholarship/">Travel scholarship deadline</a></li>
     <!-- <li><b>October 14, 2024</b>: In-person registration closes</li>
     <li><b>October 31, 2024</b>: Virtual registration closes</li> -->
     <!-- <li><b>Nov 26, 2025</b>: BiocAsia x R-Ladies Networking Event</li> -->
