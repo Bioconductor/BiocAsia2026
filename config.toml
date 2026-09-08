@@ -49,6 +49,12 @@ pagerSize = 10
     url  = "/call-for-abstracts/"
     weight = 14
 
+[[menu.main]]
+    identifier="travelscholarship"
+    name = "Travel Scholarship"
+    url  = "/travel-scholarship/"
+    weight = 16
+
 # [[menu.main]]
 #    identifier="seminars"
 #    name = "Seminars"
