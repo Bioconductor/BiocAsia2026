@@ -123,28 +123,59 @@ We’re excited to launch the bi-monthly **BiocAsia Seminar Series**, featuring 
 <div class="seminar-card">
 
 <div class="seminar-title">
-Seminar #2 — 14 July 2026
+Seminar #3 — 13 October 2026
 </div>
 
 <div class="seminar-meta">
-🕓 4:00 PM (AEST)  ·
-15:30 (ACST) · 15:00 (JST) · 14:00 (CST) · 11:30 (IST)
+🕓 14:30–16:00 (CST, GMT+8) · 15:30 (JST) · 16:30 (AEST) · 17:00 (ACDT) · 17:30 (AEDT) · 12:00 (IST)
 </div>
 
-This seminar is being held as a **hybrid event**, in partnership with Brisbane Bioinformatics.
+This seminar will be held **online via Tencent Meeting / VooV Meeting** and presented in **Chinese**.<br>
+Meeting ID: **255-737-163**
 
-<a class="seminar-button" href="https://adelaide.zoom.us/webinar/register/WN_IZPr8UleT3iOLOPDj6m7jw#/registration" target="_blank">
-Register Online
-</a><a class="seminar-button-secondary" href="https://brisbanebioinformatics.org/queensland-bioinformatics-week/registration/" target="_blank">
-Register In-Person
+<a class="seminar-button" href="https://meeting.tencent.com/dm/iNV4gxSkVuLz" target="_blank">
+Join Meeting
 </a>
 
-<div class="seminar-partner-note">
-<img src="/img/brisbane_bioinformatics_logo.png" alt="Brisbane Bioinformatics">
-In-person attendance is hosted by Brisbane Bioinformatics as part of Queensland Bioinformatics Week.
+---
+
+<div class="seminar-speaker-grid">
+
+<div class="seminar-speaker-card">
+  <img src="/img/speakers/shixiang_wang.jpg" alt="Shixiang Wang">
+  <div>
+    <div class="seminar-speaker-name">Associate Professor Shixiang Wang</div>
+    School of Life Science, Central South University<br>
+    <div class="seminar-talk-title">
+      "From Personal Projects to an Open Ecosystem: Open-Source Practice with the UCSC Xena Series and Visualization Tools"
+    </div>
+    Prof. Wang is a highly active contributor to the open-source bioinformatics community. His flagship projects, UCSCXenaTools and UCSCXenaShiny, are developed under openbiox organizations, reflecting his commitment to community-driven ecosystems. Beyond code, he co-leads the OncoHarmony Network, organizing workshops and maintaining teaching materials. He also contributes to the broader R community through openbiox Weekly and translations like the Chinese Cookbook for R.
+  </div>
 </div>
 
----
+<div class="seminar-speaker-card">
+  <img src="/img/speakers/zhougeng_xu.jpg" alt="Zhougeng Xu">
+  <div>
+    <div class="seminar-speaker-name">Dr Zhougeng Xu</div>
+    Center for Excellence in Molecular Plant Sciences, Chinese Academy of Sciences<br>
+    <div class="seminar-talk-title">
+      "From Research Needs to Open-Source Tools: My AI4S Practice"
+    </div>
+    Dr Xu is a postdoctoral researcher and an active open-source contributor in the bioinformatics community, particularly known for his extensive educational content. He has authored over 290 tutorials on platforms like Jianshu, gaining more than 2 million reads. His recent work includes Wisp Science, a local-first AI research workbench for scientific computing.
+  </div>
+</div>
+
+</div>
+
+</div>
+
+## Past Seminars
+
+<div class="seminar-card">
+
+<div class="seminar-title">
+Seminar #2 — 14 July 2026
+</div>
 
 <div class="seminar-speaker-grid">
 
@@ -163,8 +194,6 @@ In-person attendance is hosted by Brisbane Bioinformatics as part of Queensland 
 </div>
 
 </div>
-
-## Past Seminars
 
 <div class="seminar-card">
 
