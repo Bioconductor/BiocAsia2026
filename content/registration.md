@@ -7,10 +7,14 @@ description = "Registration"
 - **Early bird closes:** 2 September 2026
 - **Conference begins:** 16 November 2026 · RMIT University, Melbourne
 
-<a class="cta-button" href="https://iscb.swoogo.com/abacbs2026/begin" target="_blank" rel="noopener">Register Now</a>
+<a class="cta-button" href="https://www.abacbs.org/workshops-2026-call" target="_blank" rel="noopener">Register Now</a>
 
 <div class="biocasia-note">
-BiocAsia 2026 is a satellite event held alongside the ABACBS 2026 conference. To attend BiocAsia, register for the main <strong>ABACBS 2026 conference</strong> and add <strong>BiocAsia</strong> as an add-on during registration (A$90).
+BiocAsia 2026 is a satellite event held alongside the ABACBS 2026 conference. There are two ways to register:
+<ul>
+<li><strong>Easiest: register through the <a href="https://www.abacbs.org/workshops-2026-call" target="_blank" rel="noopener">ABACBS workshops page</a></strong>. BiocAsia costs A$90 (full), A$40 (student) or A$60 (workshop organisers).</li>
+<li><strong>Already registered for ABACBS 2026?</strong> Edit your registration on the <a href="https://iscb.swoogo.com/abacbs2026/begin" target="_blank" rel="noopener">ISCB registration portal</a> to add BiocAsia.</li>
+</ul>
 </div>
 
 ## Registration rates (AUD)

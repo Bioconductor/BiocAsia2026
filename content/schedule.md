@@ -3,7 +3,171 @@ title = "Schedule"
 description = "Schedule"
 +++
 
-### Coming soon
+BioC Asia 2026 runs alongside the ABACBS workshops. BioC Asia sessions are listed first in each time slot. Click a column heading to sort, or use the filters to narrow the list.
+
+<a class="cta-button" href="https://www.abacbs.org/workshops-2026-call" target="_blank" rel="noopener">Register Now</a>
+
+See the [Registration](/registration/) page for prices and options.
+
+⭐ = Workshop spans the entire morning or afternoon, including both sessions and the break.
+
+<style>
+.sched-filters { display: flex; flex-wrap: wrap; gap: 10px 16px; align-items: flex-end; margin: 20px 0 12px; }
+.sched-filters label { display: flex; flex-direction: column; font-weight: 600; font-size: 13px; margin: 0; }
+.sched-filters select, .sched-filters input[type=search] { font-weight: normal; margin-top: 4px; padding: 5px 8px; border: 1px solid #ccc; border-radius: 3px; min-width: 150px; }
+.sched-filters .sched-check { flex-direction: row; align-items: center; gap: 6px; padding-bottom: 7px; }
+.sched-filters button { padding: 6px 12px; border: 1px solid #ccc; background: #fff; border-radius: 3px; }
+.sched-count { font-size: 13px; color: #666; margin-bottom: 8px; }
+.sched-wrap { overflow-x: auto; }
+#sched-table th { cursor: pointer; white-space: nowrap; user-select: none; }
+#sched-table th::after { content: " \2195"; color: #bbb; }
+#sched-table th[aria-sort=ascending]::after { content: " \2191"; color: #333; }
+#sched-table th[aria-sort=descending]::after { content: " \2193"; color: #333; }
+#sched-table td { vertical-align: top; }
+#sched-table td.nowrap { white-space: nowrap; }
+#sched-table tr.bioc td { background: #eef7e6; }
+#sched-table tr.bioc td:first-child { border-left: 4px solid #4fbfa8; }
+.sched-tag { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 12px; font-weight: 600; white-space: nowrap; }
+.sched-tag.bioc { background: #4fbfa8; color: #fff; }
+.sched-tag.abacbs { background: #e4e4e4; color: #333; }
+</style>
+
+<div class="sched-filters">
+<label>Search<input type="search" id="sched-q" placeholder="Title or keyword"></label>
+<label>Day<select id="sched-day"><option value="">All days</option></select></label>
+<label>Session<select id="sched-session"><option value="">All sessions</option></select></label>
+<label>Organiser<select id="sched-org"><option value="">All</option><option>BioC Asia</option><option>ABACBS</option></select></label>
+<label class="sched-check"><input type="checkbox" id="sched-full"> ⭐ Full-session only</label>
+<button type="button" id="sched-reset">Reset</button>
+</div>
+<div class="sched-count" id="sched-count" aria-live="polite"></div>
+<div class="sched-wrap">
+<table class="table" id="sched-table">
+<thead><tr><th data-key="day">Day</th><th data-key="session">Session</th><th data-key="time">Time</th><th data-key="org">Organiser</th><th data-key="title">Title</th></tr></thead>
+<tbody></tbody>
+</table>
+</div>
+
+<script>
+(function () {
+  // [day, session, start, end, organiser, full-session, title]
+  var rows = [
+    ["Thursday, 19 November", "Afternoon 1", "1:30 PM", "3:30 PM", "BioC Asia", false, "Keynote Speaker and Student Talks"],
+    ["Thursday, 19 November", "Afternoon 1", "1:30 PM", "3:00 PM", "ABACBS", true, "Introduction to imaging-based spatial transcriptomics analysis (Part 1)"],
+    ["Thursday, 19 November", "Afternoon 1", "1:30 PM", "3:00 PM", "ABACBS", true, "Transcripts, Embeddings, and Niches: A Practical Guide to Graph Neural Networks in Spatial Transcriptomics"],
+    ["Thursday, 19 November", "Afternoon 1", "1:30 PM", "3:00 PM", "ABACBS", true, "Multi-task single-cell omics: integration, benchmarking, and condition-aware inference"],
+    ["Thursday, 19 November", "Afternoon 1", "1:30 PM", "3:00 PM", "ABACBS", false, "From Questions to Research Strategies: Scientific Brainstorming with AI Agents"],
+    ["Thursday, 19 November", "Afternoon 1", "1:30 PM", "3:00 PM", "ABACBS", true, "Omnibenchmark: orchestrating transparent, reproducible, extensible and standardized scientific benchmarks"],
+    ["Thursday, 19 November", "Afternoon 1", "1:30 PM", "3:00 PM", "ABACBS", true, "ELIXIR-GOBLET Train-the-Trainer (Part 1)"],
+    ["Thursday, 19 November", "Afternoon 2", "3:30 PM", "5:00 PM", "BioC Asia", false, "blisa: Inferring Cell–Cell Communication from Spatial Transcriptomics"],
+    ["Thursday, 19 November", "Afternoon 2", "3:30 PM", "5:00 PM", "ABACBS", false, "Predictive Functional Genomics: Live-Coding with AlphaGenome and Bioconductor"],
+    ["Friday, 20 November", "Morning 1", "9:00 AM", "11:00 AM", "BioC Asia", false, "Keynote Speaker and Student Talks"],
+    ["Friday, 20 November", "Morning 1", "9:00 AM", "10:30 AM", "ABACBS", true, "Introduction to imaging-based spatial transcriptomics analysis (Part 2)"],
+    ["Friday, 20 November", "Morning 1", "9:00 AM", "10:30 AM", "ABACBS", true, "Taxonomic profiling and MAG building from long-read metagenomics"],
+    ["Friday, 20 November", "Morning 1", "9:00 AM", "10:30 AM", "ABACBS", true, "From Reads to Resistance: An End-to-End Antimicrobial Resistance Analysis with BV-BRC"],
+    ["Friday, 20 November", "Morning 1", "9:00 AM", "10:30 AM", "ABACBS", false, "Accelerate your Research with Cloud Computing on the ARDC Nectar Research Cloud"],
+    ["Friday, 20 November", "Morning 1", "9:00 AM", "10:30 AM", "ABACBS", true, "ELIXIR-GOBLET Train-the-Trainer (Part 2)"],
+    ["Friday, 20 November", "Morning 2", "11:00 AM", "12:30 PM", "BioC Asia", false, "From Reads to Isoforms: Long-Read RNA-Seq Analysis with bambu across Bulk, Single-Cell and Spatial Data"],
+    ["Friday, 20 November", "Morning 2", "11:00 AM", "12:30 PM", "BioC Asia", false, "cellNexus and sccomp: From the Human Cell Atlas to insights"],
+    ["Friday, 20 November", "Morning 2", "11:00 AM", "12:30 PM", "ABACBS", false, "Hello nf-core – Intermediate Nextflow training"],
+    ["Friday, 20 November", "Afternoon 1", "1:00 PM", "2:30 PM", "BioC Asia", true, "Modelling continuous cell states using scRNA-seq data"],
+    ["Friday, 20 November", "Afternoon 1", "1:00 PM", "2:30 PM", "BioC Asia", false, "ATAClone: Cancer Clone Identification and Copy Number Estimation from Single-cell ATAC-seq"],
+    ["Friday, 20 November", "Afternoon 1", "1:00 PM", "2:30 PM", "ABACBS", false, "Spatial Taster – A quick sampler of spatial transcriptomics tests"],
+    ["Friday, 20 November", "Afternoon 1", "1:00 PM", "2:30 PM", "ABACBS", false, "From Raw Reads to Cancer Insights: Hands-on Long-Read Sequencing Analysis"],
+    ["Friday, 20 November", "Afternoon 1", "1:00 PM", "2:30 PM", "ABACBS", true, "Vibe-sciencing, carefully: getting real analyses out of coding agents"],
+    ["Friday, 20 November", "Afternoon 1", "1:00 PM", "2:30 PM", "ABACBS", true, "Work less, garden more: Quick wins for scientific computing"],
+    ["Friday, 20 November", "Afternoon 2", "3:00 PM", "4:30 PM", "BioC Asia", false, "Differential transcript expression and differential transcript usage using Salmon and edgeR"]
+  ].map(function (r, i) {
+    return { i: i, day: r[0], session: r[1], start: r[2], end: r[3], org: r[4], full: r[5], title: r[6] };
+  });
+
+  function mins(t) {
+    var m = t.match(/(\d+):(\d+) (AM|PM)/), h = +m[1] % 12;
+    return (m[3] === "PM" ? h + 12 : h) * 60 + +m[2];
+  }
+  var dayOrder = [], sessionOrder = [];
+  rows.forEach(function (r) {
+    if (dayOrder.indexOf(r.day) < 0) dayOrder.push(r.day);
+    if (sessionOrder.indexOf(r.session) < 0) sessionOrder.push(r.session);
+  });
+  sessionOrder.sort(function (a, b) {
+    var ra = rows.filter(function (r) { return r.session === a; })[0];
+    var rb = rows.filter(function (r) { return r.session === b; })[0];
+    return mins(ra.start) - mins(rb.start);
+  });
+
+  // Sort values per column; ties fall back to the original order (BioC Asia first per slot).
+  var keyFns = {
+    day: function (r) { return dayOrder.indexOf(r.day); },
+    session: function (r) { return sessionOrder.indexOf(r.session); },
+    time: function (r) { return dayOrder.indexOf(r.day) * 10000 + mins(r.start); },
+    org: function (r) { return r.org === "BioC Asia" ? 0 : 1; },
+    title: function (r) { return r.title.toLowerCase(); }
+  };
+
+  var $ = function (id) { return document.getElementById(id); };
+  var table = $("sched-table"), tbody = table.querySelector("tbody");
+  var sortKey = null, sortDir = 1;
+
+  function fill(sel, values) {
+    values.forEach(function (v) { var o = document.createElement("option"); o.textContent = v; sel.appendChild(o); });
+  }
+  fill($("sched-day"), dayOrder);
+  fill($("sched-session"), sessionOrder);
+
+  function esc(s) { var d = document.createElement("div"); d.textContent = s; return d.innerHTML; }
+
+  function render() {
+    var q = $("sched-q").value.trim().toLowerCase(), day = $("sched-day").value,
+        session = $("sched-session").value, org = $("sched-org").value, full = $("sched-full").checked;
+    var list = rows.filter(function (r) {
+      return (!day || r.day === day) && (!session || r.session === session) &&
+             (!org || r.org === org) && (!full || r.full) &&
+             (!q || (r.title + " " + r.org).toLowerCase().indexOf(q) >= 0);
+    });
+    if (sortKey) {
+      var f = keyFns[sortKey];
+      list.sort(function (a, b) {
+        var x = f(a), y = f(b);
+        return x < y ? -sortDir : x > y ? sortDir : a.i - b.i;
+      });
+    }
+    tbody.innerHTML = list.map(function (r) {
+      var bioc = r.org === "BioC Asia";
+      return '<tr class="' + (bioc ? "bioc" : "") + '">' +
+        '<td class="nowrap">' + esc(r.day) + '</td>' +
+        '<td class="nowrap">' + esc(r.session) + '</td>' +
+        '<td class="nowrap">' + esc(r.start + "–" + r.end) + '</td>' +
+        '<td><span class="sched-tag ' + (bioc ? "bioc" : "abacbs") + '">' + esc(r.org) + '</span></td>' +
+        '<td>' + (r.full ? '<span title="Spans the entire morning or afternoon">⭐</span> ' : '') + esc(r.title) + '</td></tr>';
+    }).join("") || '<tr><td colspan="5">No sessions match these filters.</td></tr>';
+    $("sched-count").textContent = "Showing " + list.length + " of " + rows.length + " sessions";
+  }
+
+  table.querySelectorAll("th").forEach(function (th) {
+    th.addEventListener("click", function () {
+      var k = th.getAttribute("data-key");
+      sortDir = sortKey === k ? -sortDir : 1;
+      sortKey = k;
+      table.querySelectorAll("th").forEach(function (h) { h.removeAttribute("aria-sort"); });
+      th.setAttribute("aria-sort", sortDir === 1 ? "ascending" : "descending");
+      render();
+    });
+  });
+  ["sched-q", "sched-day", "sched-session", "sched-org", "sched-full"].forEach(function (id) {
+    $(id).addEventListener("input", render);
+    $(id).addEventListener("change", render);
+  });
+  $("sched-reset").addEventListener("click", function () {
+    $("sched-q").value = ""; $("sched-day").value = ""; $("sched-session").value = "";
+    $("sched-org").value = ""; $("sched-full").checked = false;
+    sortKey = null;
+    table.querySelectorAll("th").forEach(function (h) { h.removeAttribute("aria-sort"); });
+    render();
+  });
+  render();
+})();
+</script>
 
 <!--
 + [All short talks](../tags/short-talk/)
