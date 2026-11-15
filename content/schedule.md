@@ -3,19 +3,37 @@ title = "Schedule"
 description = "Schedule"
 +++
 
-BioC Asia 2026 runs alongside the ABACBS workshops. BioC Asia sessions are listed first in each time slot. Click a column heading to sort, or use the filters to narrow the list.
+BioC Asia 2026 is held alongside the ABACBS 2026 workshops at **Building 80, RMIT University City Campus, Melbourne** on Thursday 19 and Friday 20 November 2026.
 
 <a class="cta-button" href="https://www.abacbs.org/workshops-2026-call" target="_blank" rel="noopener">Register Now</a>
 
 See the [Registration](/registration/) page for prices and options.
 
-⭐ = Workshop spans the entire morning or afternoon, including both sessions and the break.
+## BioC Asia highlights
+
+<div class="sched-highlights">
+<div class="sched-hl"><div class="sched-hl-when">Thu 19 Nov · 1:15–2:00 PM · 080.08.10</div><div class="sched-hl-what"><strong>Keynote:</strong> Dr. Charity Law (WEHI)</div></div>
+<div class="sched-hl"><div class="sched-hl-when">Thu 19 Nov · 4:00–5:30 PM · 080.08.10</div><div class="sched-hl-what">Global BioC Asia community talk, student talks and community discussion</div></div>
+<div class="sched-hl"><div class="sched-hl-when">Thu 19 Nov · 6:00 PM–late</div><div class="sched-hl-what"><strong>Community meetup</strong> at the Oxford Scholar (outside Building 80), sponsored by Bioconductor</div></div>
+<div class="sched-hl"><div class="sched-hl-when">Fri 20 Nov · 9:00–9:45 AM · 080.08.10</div><div class="sched-hl-what"><strong>Keynote:</strong> Prof. Mark Robinson (University of Zurich)</div></div>
+<div class="sched-hl"><div class="sched-hl-when">Fri 20 Nov · 9:45–10:30 AM · 080.08.10</div><div class="sched-hl-what">Global BioC Asia community talk and student talks</div></div>
+<div class="sched-hl"><div class="sched-hl-when">Thu &amp; Fri</div><div class="sched-hl-what">Five hands-on BioC Asia workshops: blisa, bambu, cellNexus &amp; sccomp, continuous cell states, and Salmon &amp; edgeR</div></div>
+</div>
+
+## Full program
+
+BioC Asia sessions are shown first and highlighted in green. ABACBS workshops running at the same time are listed too. Click a column heading to sort, or use the filters to narrow the list.
+
+Venue codes (e.g. 080.08.10) read as Building 80, Floor 08, Room 10. Workshops are subject to availability.
 
 <style>
+.sched-highlights { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; margin: 12px 0 28px; }
+.sched-hl { border-left: 4px solid #4fbfa8; background: #eef7e6; padding: 10px 14px; border-radius: 3px; }
+.sched-hl-when { font-size: 12px; font-weight: 600; color: #2f6b57; margin-bottom: 4px; }
+.sched-hl-what { font-size: 14px; }
 .sched-filters { display: flex; flex-wrap: wrap; gap: 10px 16px; align-items: flex-end; margin: 20px 0 12px; }
 .sched-filters label { display: flex; flex-direction: column; font-weight: 600; font-size: 13px; margin: 0; }
 .sched-filters select, .sched-filters input[type=search] { font-weight: normal; margin-top: 4px; padding: 5px 8px; border: 1px solid #ccc; border-radius: 3px; min-width: 150px; }
-.sched-filters .sched-check { flex-direction: row; align-items: center; gap: 6px; padding-bottom: 7px; }
 .sched-filters button { padding: 6px 12px; border: 1px solid #ccc; background: #fff; border-radius: 3px; }
 .sched-count { font-size: 13px; color: #666; margin-bottom: 8px; }
 .sched-wrap { overflow-x: auto; }
@@ -27,83 +45,83 @@ See the [Registration](/registration/) page for prices and options.
 #sched-table td.nowrap { white-space: nowrap; }
 #sched-table tr.bioc td { background: #eef7e6; }
 #sched-table tr.bioc td:first-child { border-left: 4px solid #4fbfa8; }
+#sched-table tr.abacbs td { color: #555; }
+#sched-table .sched-speaker { display: block; font-size: 13px; color: #555; margin-top: 2px; }
 .sched-tag { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 12px; font-weight: 600; white-space: nowrap; }
 .sched-tag.bioc { background: #4fbfa8; color: #fff; }
-.sched-tag.abacbs { background: #e4e4e4; color: #333; }
+.sched-tag.abacbs { background: #f5d77a; color: #333; }
 </style>
 
 <div class="sched-filters">
-<label>Search<input type="search" id="sched-q" placeholder="Title or keyword"></label>
+<label>Search<input type="search" id="sched-q" placeholder="Title, speaker or room"></label>
 <label>Day<select id="sched-day"><option value="">All days</option></select></label>
-<label>Session<select id="sched-session"><option value="">All sessions</option></select></label>
 <label>Organiser<select id="sched-org"><option value="">All</option><option>BioC Asia</option><option>ABACBS</option></select></label>
-<label class="sched-check"><input type="checkbox" id="sched-full"> ⭐ Full-session only</label>
+<label>Type<select id="sched-type"><option value="">All types</option></select></label>
 <button type="button" id="sched-reset">Reset</button>
 </div>
 <div class="sched-count" id="sched-count" aria-live="polite"></div>
 <div class="sched-wrap">
 <table class="table" id="sched-table">
-<thead><tr><th data-key="day">Day</th><th data-key="session">Session</th><th data-key="time">Time</th><th data-key="org">Organiser</th><th data-key="title">Title</th></tr></thead>
+<thead><tr><th data-key="day">Day</th><th data-key="time">Time</th><th data-key="room">Room</th><th data-key="org">Organiser</th><th data-key="type">Type</th><th data-key="title">Session</th></tr></thead>
 <tbody></tbody>
 </table>
 </div>
 
 <script>
 (function () {
-  // [day, session, start, end, organiser, full-session, title]
+  // [day, start, end, room, organiser, type, title, speaker]
   var rows = [
-    ["Thursday, 19 November", "Afternoon 1", "1:30 PM", "3:30 PM", "BioC Asia", false, "Keynote Speaker and Student Talks"],
-    ["Thursday, 19 November", "Afternoon 1", "1:30 PM", "3:00 PM", "ABACBS", true, "Introduction to imaging-based spatial transcriptomics analysis (Part 1)"],
-    ["Thursday, 19 November", "Afternoon 1", "1:30 PM", "3:00 PM", "ABACBS", true, "Transcripts, Embeddings, and Niches: A Practical Guide to Graph Neural Networks in Spatial Transcriptomics"],
-    ["Thursday, 19 November", "Afternoon 1", "1:30 PM", "3:00 PM", "ABACBS", true, "Multi-task single-cell omics: integration, benchmarking, and condition-aware inference"],
-    ["Thursday, 19 November", "Afternoon 1", "1:30 PM", "3:00 PM", "ABACBS", false, "From Questions to Research Strategies: Scientific Brainstorming with AI Agents"],
-    ["Thursday, 19 November", "Afternoon 1", "1:30 PM", "3:00 PM", "ABACBS", true, "Omnibenchmark: orchestrating transparent, reproducible, extensible and standardized scientific benchmarks"],
-    ["Thursday, 19 November", "Afternoon 1", "1:30 PM", "3:00 PM", "ABACBS", true, "ELIXIR-GOBLET Train-the-Trainer (Part 1)"],
-    ["Thursday, 19 November", "Afternoon 2", "3:30 PM", "5:00 PM", "BioC Asia", false, "blisa: Inferring Cell–Cell Communication from Spatial Transcriptomics"],
-    ["Thursday, 19 November", "Afternoon 2", "3:30 PM", "5:00 PM", "ABACBS", false, "Predictive Functional Genomics: Live-Coding with AlphaGenome and Bioconductor"],
-    ["Friday, 20 November", "Morning 1", "9:00 AM", "11:00 AM", "BioC Asia", false, "Keynote Speaker and Student Talks"],
-    ["Friday, 20 November", "Morning 1", "9:00 AM", "10:30 AM", "ABACBS", true, "Introduction to imaging-based spatial transcriptomics analysis (Part 2)"],
-    ["Friday, 20 November", "Morning 1", "9:00 AM", "10:30 AM", "ABACBS", true, "Taxonomic profiling and MAG building from long-read metagenomics"],
-    ["Friday, 20 November", "Morning 1", "9:00 AM", "10:30 AM", "ABACBS", true, "From Reads to Resistance: An End-to-End Antimicrobial Resistance Analysis with BV-BRC"],
-    ["Friday, 20 November", "Morning 1", "9:00 AM", "10:30 AM", "ABACBS", false, "Accelerate your Research with Cloud Computing on the ARDC Nectar Research Cloud"],
-    ["Friday, 20 November", "Morning 1", "9:00 AM", "10:30 AM", "ABACBS", true, "ELIXIR-GOBLET Train-the-Trainer (Part 2)"],
-    ["Friday, 20 November", "Morning 2", "11:00 AM", "12:30 PM", "BioC Asia", false, "From Reads to Isoforms: Long-Read RNA-Seq Analysis with bambu across Bulk, Single-Cell and Spatial Data"],
-    ["Friday, 20 November", "Morning 2", "11:00 AM", "12:30 PM", "BioC Asia", false, "cellNexus and sccomp: From the Human Cell Atlas to insights"],
-    ["Friday, 20 November", "Morning 2", "11:00 AM", "12:30 PM", "ABACBS", false, "Hello nf-core – Intermediate Nextflow training"],
-    ["Friday, 20 November", "Afternoon 1", "1:00 PM", "2:30 PM", "BioC Asia", true, "Modelling continuous cell states using scRNA-seq data"],
-    ["Friday, 20 November", "Afternoon 1", "1:00 PM", "2:30 PM", "BioC Asia", false, "ATAClone: Cancer Clone Identification and Copy Number Estimation from Single-cell ATAC-seq"],
-    ["Friday, 20 November", "Afternoon 1", "1:00 PM", "2:30 PM", "ABACBS", false, "Spatial Taster – A quick sampler of spatial transcriptomics tests"],
-    ["Friday, 20 November", "Afternoon 1", "1:00 PM", "2:30 PM", "ABACBS", false, "From Raw Reads to Cancer Insights: Hands-on Long-Read Sequencing Analysis"],
-    ["Friday, 20 November", "Afternoon 1", "1:00 PM", "2:30 PM", "ABACBS", true, "Vibe-sciencing, carefully: getting real analyses out of coding agents"],
-    ["Friday, 20 November", "Afternoon 1", "1:00 PM", "2:30 PM", "ABACBS", true, "Work less, garden more: Quick wins for scientific computing"],
-    ["Friday, 20 November", "Afternoon 2", "3:00 PM", "4:30 PM", "BioC Asia", false, "Differential transcript expression and differential transcript usage using Salmon and edgeR"]
+    ["Thursday, 19 November", "1:15 PM", "2:00 PM", "080.08.10", "BioC Asia", "Keynote", "Keynote", "Dr. Charity Law (WEHI)"],
+    ["Thursday, 19 November", "2:00 PM", "3:30 PM", "080.07.06", "BioC Asia", "Workshop", "blisa: Inferring Cell–Cell Communication from Spatial Transcriptomics", ""],
+    ["Thursday, 19 November", "2:00 PM", "5:30 PM", "080.07.02", "ABACBS", "Workshop", "Transcripts, Embeddings, and Niches: A Practical Guide to Graph Neural Networks in Spatial Transcriptomics", ""],
+    ["Thursday, 19 November", "2:00 PM", "5:30 PM", "080.08.09", "ABACBS", "Workshop", "Multi-task Single-cell Omics: Integration, Benchmarking, and Condition-aware Inference", ""],
+    ["Thursday, 19 November", "2:00 PM", "5:30 PM", "080.07.09", "ABACBS", "Workshop", "Swarm in The Lab: Building a Fleet of Biomedical AI Agents with Virtual Lab, Paper2Agent and the Virtual Biotech platforms", ""],
+    ["Thursday, 19 November", "4:00 PM", "4:15 PM", "080.08.10", "BioC Asia", "Community talk", "Global BioC Asia Community Talk", "Jyoti Bhogal"],
+    ["Thursday, 19 November", "4:15 PM", "4:25 PM", "080.08.10", "BioC Asia", "Student talk", "blisa: Inferring Cell–Cell Communication in Spatial Transcriptomics", "Lei Qin"],
+    ["Thursday, 19 November", "4:25 PM", "4:35 PM", "080.08.10", "BioC Asia", "Student talk", "Accelerating Antiviral Guide RNA Design with Machine Learning-Informed CRISPR-Cas13b Targeting", "Phan Dang Khoa"],
+    ["Thursday, 19 November", "4:35 PM", "4:45 PM", "080.08.10", "BioC Asia", "Student talk", "Systematic benchmarking of spatial transcriptomics analysis workflows using SpaBench", "Yang Xu"],
+    ["Thursday, 19 November", "4:45 PM", "5:30 PM", "080.08.10", "BioC Asia", "Community", "Community discussion", ""],
+    ["Thursday, 19 November", "6:00 PM", "late", "Oxford Scholar", "BioC Asia", "Social", "Community meetup (Oxford Scholar, outside Building 80), sponsored by Bioconductor", ""],
+    ["Friday, 20 November", "9:00 AM", "9:45 AM", "080.08.10", "BioC Asia", "Keynote", "Keynote", "Prof. Mark Robinson (University of Zurich)"],
+    ["Friday, 20 November", "9:45 AM", "10:00 AM", "080.08.10", "BioC Asia", "Community talk", "Global BioC Asia Community Talk", "Zuguang Gu"],
+    ["Friday, 20 November", "10:00 AM", "10:10 AM", "080.08.10", "BioC Asia", "Student talk", "SPAROscore: sparsity-adaptive gene-set scoring", "Venkatesh Kamaraj"],
+    ["Friday, 20 November", "10:10 AM", "10:20 AM", "080.08.10", "BioC Asia", "Student talk", "Optimising Gene Therapy Delivery: Targeting Specific Cell Types and Tissues with Recombinant Adeno-Associated Virus for Precision Medicine", "Natsuki Sasaki"],
+    ["Friday, 20 November", "10:20 AM", "10:30 AM", "080.08.10", "BioC Asia", "Student talk", "Computational Discovery of Immunodominant and Evolutionarily Robust T-Cell Targets for Rational Dengue Vaccine Design", "Jingjing Liu"],
+    ["Friday, 20 November", "11:00 AM", "12:30 PM", "080.07.09", "BioC Asia", "Workshop", "From Reads to Isoforms: Long-Read RNA-Seq Analysis with bambu across Bulk, Single-Cell and Spatial Data", ""],
+    ["Friday, 20 November", "11:00 AM", "12:30 PM", "080.08.09", "BioC Asia", "Workshop", "cellNexus and sccomp: From the Human Cell Atlas to insights", ""],
+    ["Friday, 20 November", "11:00 AM", "2:30 PM", "080.07.08", "ABACBS", "Workshop", "Taxonomic profiling and MAG building from long-read metagenomics", ""],
+    ["Friday, 20 November", "11:00 AM", "12:30 PM", "080.07.02", "ABACBS", "Workshop", "Accelerate your Research with Cloud Computing on the ARDC Nectar Research Cloud", ""],
+    ["Friday, 20 November", "1:00 PM", "4:30 PM", "080.07.02", "BioC Asia", "Workshop", "Modelling continuous cell states using scRNA-seq data", ""],
+    ["Friday, 20 November", "1:00 PM", "2:30 PM", "080.08.09", "ABACBS", "Workshop", "From Raw Reads to Cancer Insights: Hands-on Long-Read Sequencing Analysis", ""],
+    ["Friday, 20 November", "1:00 PM", "4:30 PM", "080.07.09", "ABACBS", "Workshop", "Vibe-sciencing, carefully: getting real analyses out of coding agents", ""],
+    ["Friday, 20 November", "3:00 PM", "4:30 PM", "080.07.06", "BioC Asia", "Workshop", "Differential transcript expression and differential transcript usage using Salmon and edgeR", ""]
   ].map(function (r, i) {
-    return { i: i, day: r[0], session: r[1], start: r[2], end: r[3], org: r[4], full: r[5], title: r[6] };
+    return { i: i, day: r[0], start: r[1], end: r[2], room: r[3], org: r[4], type: r[5], title: r[6], speaker: r[7] };
   });
 
   function mins(t) {
     var m = t.match(/(\d+):(\d+) (AM|PM)/), h = +m[1] % 12;
     return (m[3] === "PM" ? h + 12 : h) * 60 + +m[2];
   }
-  var dayOrder = [], sessionOrder = [];
-  rows.forEach(function (r) {
-    if (dayOrder.indexOf(r.day) < 0) dayOrder.push(r.day);
-    if (sessionOrder.indexOf(r.session) < 0) sessionOrder.push(r.session);
-  });
-  sessionOrder.sort(function (a, b) {
-    var ra = rows.filter(function (r) { return r.session === a; })[0];
-    var rb = rows.filter(function (r) { return r.session === b; })[0];
-    return mins(ra.start) - mins(rb.start);
-  });
+  function uniq(key) {
+    var out = [];
+    rows.forEach(function (r) { if (out.indexOf(r[key]) < 0) out.push(r[key]); });
+    return out;
+  }
+  var dayOrder = uniq("day");
 
-  // Sort values per column; ties fall back to the original order (BioC Asia first per slot).
+  // Sort values per column; ties fall back to day, then start time with BioC Asia first.
   var keyFns = {
     day: function (r) { return dayOrder.indexOf(r.day); },
-    session: function (r) { return sessionOrder.indexOf(r.session); },
     time: function (r) { return dayOrder.indexOf(r.day) * 10000 + mins(r.start); },
+    room: function (r) { return r.room; },
     org: function (r) { return r.org === "BioC Asia" ? 0 : 1; },
+    type: function (r) { return r.type; },
     title: function (r) { return r.title.toLowerCase(); }
   };
+  function defaultOrder(a, b) {
+    return keyFns.time(a) - keyFns.time(b) || keyFns.org(a) - keyFns.org(b) || a.i - b.i;
+  }
 
   var $ = function (id) { return document.getElementById(id); };
   var table = $("sched-table"), tbody = table.querySelector("tbody");
@@ -113,34 +131,35 @@ See the [Registration](/registration/) page for prices and options.
     values.forEach(function (v) { var o = document.createElement("option"); o.textContent = v; sel.appendChild(o); });
   }
   fill($("sched-day"), dayOrder);
-  fill($("sched-session"), sessionOrder);
+  fill($("sched-type"), uniq("type").sort());
 
   function esc(s) { var d = document.createElement("div"); d.textContent = s; return d.innerHTML; }
 
   function render() {
     var q = $("sched-q").value.trim().toLowerCase(), day = $("sched-day").value,
-        session = $("sched-session").value, org = $("sched-org").value, full = $("sched-full").checked;
+        org = $("sched-org").value, type = $("sched-type").value;
     var list = rows.filter(function (r) {
-      return (!day || r.day === day) && (!session || r.session === session) &&
-             (!org || r.org === org) && (!full || r.full) &&
-             (!q || (r.title + " " + r.org).toLowerCase().indexOf(q) >= 0);
+      return (!day || r.day === day) && (!org || r.org === org) && (!type || r.type === type) &&
+             (!q || [r.title, r.speaker, r.room, r.org, r.type].join(" ").toLowerCase().indexOf(q) >= 0);
     });
-    if (sortKey) {
-      var f = keyFns[sortKey];
-      list.sort(function (a, b) {
-        var x = f(a), y = f(b);
-        return x < y ? -sortDir : x > y ? sortDir : a.i - b.i;
-      });
-    }
+    list.sort(function (a, b) {
+      if (sortKey) {
+        var x = keyFns[sortKey](a), y = keyFns[sortKey](b);
+        if (x < y) return -sortDir;
+        if (x > y) return sortDir;
+      }
+      return defaultOrder(a, b);
+    });
     tbody.innerHTML = list.map(function (r) {
       var bioc = r.org === "BioC Asia";
-      return '<tr class="' + (bioc ? "bioc" : "") + '">' +
+      return '<tr class="' + (bioc ? "bioc" : "abacbs") + '">' +
         '<td class="nowrap">' + esc(r.day) + '</td>' +
-        '<td class="nowrap">' + esc(r.session) + '</td>' +
         '<td class="nowrap">' + esc(r.start + "–" + r.end) + '</td>' +
+        '<td class="nowrap">' + esc(r.room) + '</td>' +
         '<td><span class="sched-tag ' + (bioc ? "bioc" : "abacbs") + '">' + esc(r.org) + '</span></td>' +
-        '<td>' + (r.full ? '<span title="Spans the entire morning or afternoon">⭐</span> ' : '') + esc(r.title) + '</td></tr>';
-    }).join("") || '<tr><td colspan="5">No sessions match these filters.</td></tr>';
+        '<td class="nowrap">' + esc(r.type) + '</td>' +
+        '<td>' + esc(r.title) + (r.speaker ? '<span class="sched-speaker">' + esc(r.speaker) + '</span>' : '') + '</td></tr>';
+    }).join("") || '<tr><td colspan="6">No sessions match these filters.</td></tr>';
     $("sched-count").textContent = "Showing " + list.length + " of " + rows.length + " sessions";
   }
 
@@ -154,13 +173,12 @@ See the [Registration](/registration/) page for prices and options.
       render();
     });
   });
-  ["sched-q", "sched-day", "sched-session", "sched-org", "sched-full"].forEach(function (id) {
+  ["sched-q", "sched-day", "sched-org", "sched-type"].forEach(function (id) {
     $(id).addEventListener("input", render);
     $(id).addEventListener("change", render);
   });
   $("sched-reset").addEventListener("click", function () {
-    $("sched-q").value = ""; $("sched-day").value = ""; $("sched-session").value = "";
-    $("sched-org").value = ""; $("sched-full").checked = false;
+    $("sched-q").value = ""; $("sched-day").value = ""; $("sched-org").value = ""; $("sched-type").value = "";
     sortKey = null;
     table.querySelectorAll("th").forEach(function (h) { h.removeAttribute("aria-sort"); });
     render();
