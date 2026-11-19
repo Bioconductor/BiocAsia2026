@@ -12,11 +12,11 @@ See the [Registration](/registration/) page for prices and options.
 ## BioC Asia highlights
 
 <div class="sched-highlights">
-<div class="sched-hl"><div class="sched-hl-when">Thu 19 Nov · 1:15–2:00 PM · 080.08.10</div><div class="sched-hl-what"><strong>Keynote:</strong> Dr. Charity Law (WEHI)</div></div>
-<div class="sched-hl"><div class="sched-hl-when">Thu 19 Nov · 4:00–5:30 PM · 080.08.10</div><div class="sched-hl-what">Global BioC Asia community talk, student talks and community discussion</div></div>
+<div class="sched-hl"><div class="sched-hl-when">Thu 19 Nov · 1:15–2:00 PM · 080.06.05</div><div class="sched-hl-what"><strong>Keynote:</strong> Dr. Charity Law (WEHI)</div></div>
+<div class="sched-hl"><div class="sched-hl-when">Thu 19 Nov · 4:00–5:30 PM · 080.06.05</div><div class="sched-hl-what">Global BioC Asia community talk, student talks and community discussion</div></div>
 <div class="sched-hl"><div class="sched-hl-when">Thu 19 Nov · 6:00 PM–late</div><div class="sched-hl-what"><strong>Community meetup</strong> at the Oxford Scholar (outside Building 80), sponsored by Bioconductor</div></div>
-<div class="sched-hl"><div class="sched-hl-when">Fri 20 Nov · 9:00–9:45 AM · 080.08.10</div><div class="sched-hl-what"><strong>Keynote:</strong> Prof. Mark Robinson (University of Zurich)</div></div>
-<div class="sched-hl"><div class="sched-hl-when">Fri 20 Nov · 9:45–10:30 AM · 080.08.10</div><div class="sched-hl-what">Global BioC Asia community talk and student talks</div></div>
+<div class="sched-hl"><div class="sched-hl-when">Fri 20 Nov · 9:00–9:45 AM · 080.06.05</div><div class="sched-hl-what"><strong>Keynote:</strong> Prof. Mark Robinson (University of Zurich)</div></div>
+<div class="sched-hl"><div class="sched-hl-when">Fri 20 Nov · 9:45–10:30 AM · 080.06.05</div><div class="sched-hl-what">Global BioC Asia community talk and student talks</div></div>
 <div class="sched-hl"><div class="sched-hl-when">Thu &amp; Fri</div><div class="sched-hl-what">Five hands-on BioC Asia workshops: blisa, bambu, cellNexus &amp; sccomp, continuous cell states, and Salmon &amp; edgeR</div></div>
 </div>
 
@@ -24,7 +24,7 @@ See the [Registration](/registration/) page for prices and options.
 
 BioC Asia sessions are shown first and highlighted in green. ABACBS workshops running at the same time are listed too. Click a column heading to sort, or use the filters to narrow the list.
 
-Venue codes (e.g. 080.08.10) read as Building 80, Floor 08, Room 10. Workshops are subject to availability.
+Venue codes (e.g. 080.06.05) read as Building 80, Floor 06, Room 05. Workshops are subject to availability.
 
 <style>
 .sched-highlights { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; margin: 12px 0 28px; }
@@ -71,22 +71,22 @@ Venue codes (e.g. 080.08.10) read as Building 80, Floor 08, Room 10. Workshops a
 (function () {
   // [day, start, end, room, organiser, type, title, speaker]
   var rows = [
-    ["Thursday, 19 November", "1:15 PM", "2:00 PM", "080.08.10", "BioC Asia", "Keynote", "Keynote", "Dr. Charity Law (WEHI)"],
+    ["Thursday, 19 November", "1:15 PM", "2:00 PM", "080.06.05", "BioC Asia", "Keynote", "Keynote", "Dr. Charity Law (WEHI)"],
     ["Thursday, 19 November", "2:00 PM", "3:30 PM", "080.07.06", "BioC Asia", "Workshop", "blisa: Inferring Cell–Cell Communication from Spatial Transcriptomics", ""],
     ["Thursday, 19 November", "2:00 PM", "5:30 PM", "080.07.02", "ABACBS", "Workshop", "Transcripts, Embeddings, and Niches: A Practical Guide to Graph Neural Networks in Spatial Transcriptomics", ""],
     ["Thursday, 19 November", "2:00 PM", "5:30 PM", "080.08.09", "ABACBS", "Workshop", "Multi-task Single-cell Omics: Integration, Benchmarking, and Condition-aware Inference", ""],
     ["Thursday, 19 November", "2:00 PM", "5:30 PM", "080.07.09", "ABACBS", "Workshop", "Swarm in The Lab: Building a Fleet of Biomedical AI Agents with Virtual Lab, Paper2Agent and the Virtual Biotech platforms", ""],
-    ["Thursday, 19 November", "4:00 PM", "4:15 PM", "080.08.10", "BioC Asia", "Community talk", "Global BioC Asia Community Talk", "Jyoti Bhogal"],
-    ["Thursday, 19 November", "4:15 PM", "4:25 PM", "080.08.10", "BioC Asia", "Student talk", "blisa: Inferring Cell–Cell Communication in Spatial Transcriptomics", "Lei Qin"],
-    ["Thursday, 19 November", "4:25 PM", "4:35 PM", "080.08.10", "BioC Asia", "Student talk", "Accelerating Antiviral Guide RNA Design with Machine Learning-Informed CRISPR-Cas13b Targeting", "Phan Dang Khoa"],
-    ["Thursday, 19 November", "4:35 PM", "4:45 PM", "080.08.10", "BioC Asia", "Student talk", "Systematic benchmarking of spatial transcriptomics analysis workflows using SpaBench", "Yang Xu"],
-    ["Thursday, 19 November", "4:45 PM", "5:30 PM", "080.08.10", "BioC Asia", "Community", "Community discussion", ""],
+    ["Thursday, 19 November", "4:00 PM", "4:15 PM", "080.06.05", "BioC Asia", "Community talk", "Global BioC Asia Community Talk", "Jyoti Bhogal"],
+    ["Thursday, 19 November", "4:15 PM", "4:25 PM", "080.06.05", "BioC Asia", "Student talk", "blisa: Inferring Cell–Cell Communication in Spatial Transcriptomics", "Lei Qin"],
+    ["Thursday, 19 November", "4:25 PM", "4:35 PM", "080.06.05", "BioC Asia", "Student talk", "Accelerating Antiviral Guide RNA Design with Machine Learning-Informed CRISPR-Cas13b Targeting", "Phan Dang Khoa"],
+    ["Thursday, 19 November", "4:35 PM", "4:45 PM", "080.06.05", "BioC Asia", "Student talk", "Systematic benchmarking of spatial transcriptomics analysis workflows using SpaBench", "Yang Xu"],
+    ["Thursday, 19 November", "4:45 PM", "5:30 PM", "080.06.05", "BioC Asia", "Community", "Community discussion", ""],
     ["Thursday, 19 November", "6:00 PM", "late", "Oxford Scholar", "BioC Asia", "Social", "Community meetup (Oxford Scholar, outside Building 80), sponsored by Bioconductor", ""],
-    ["Friday, 20 November", "9:00 AM", "9:45 AM", "080.08.10", "BioC Asia", "Keynote", "Keynote", "Prof. Mark Robinson (University of Zurich)"],
-    ["Friday, 20 November", "9:45 AM", "10:00 AM", "080.08.10", "BioC Asia", "Community talk", "Global BioC Asia Community Talk", "Zuguang Gu"],
-    ["Friday, 20 November", "10:00 AM", "10:10 AM", "080.08.10", "BioC Asia", "Student talk", "SPAROscore: sparsity-adaptive gene-set scoring", "Venkatesh Kamaraj"],
-    ["Friday, 20 November", "10:10 AM", "10:20 AM", "080.08.10", "BioC Asia", "Student talk", "Optimising Gene Therapy Delivery: Targeting Specific Cell Types and Tissues with Recombinant Adeno-Associated Virus for Precision Medicine", "Natsuki Sasaki"],
-    ["Friday, 20 November", "10:20 AM", "10:30 AM", "080.08.10", "BioC Asia", "Student talk", "Computational Discovery of Immunodominant and Evolutionarily Robust T-Cell Targets for Rational Dengue Vaccine Design", "Jingjing Liu"],
+    ["Friday, 20 November", "9:00 AM", "9:45 AM", "080.06.05", "BioC Asia", "Keynote", "Keynote", "Prof. Mark Robinson (University of Zurich)"],
+    ["Friday, 20 November", "9:45 AM", "10:00 AM", "080.06.05", "BioC Asia", "Community talk", "Global BioC Asia Community Talk", "Zuguang Gu"],
+    ["Friday, 20 November", "10:00 AM", "10:10 AM", "080.06.05", "BioC Asia", "Student talk", "SPAROscore: sparsity-adaptive gene-set scoring", "Venkatesh Kamaraj"],
+    ["Friday, 20 November", "10:10 AM", "10:20 AM", "080.06.05", "BioC Asia", "Student talk", "Optimising Gene Therapy Delivery: Targeting Specific Cell Types and Tissues with Recombinant Adeno-Associated Virus for Precision Medicine", "Natsuki Sasaki"],
+    ["Friday, 20 November", "10:20 AM", "10:30 AM", "080.06.05", "BioC Asia", "Student talk", "Computational Discovery of Immunodominant and Evolutionarily Robust T-Cell Targets for Rational Dengue Vaccine Design", "Jingjing Liu"],
     ["Friday, 20 November", "11:00 AM", "12:30 PM", "080.07.09", "BioC Asia", "Workshop", "From Reads to Isoforms: Long-Read RNA-Seq Analysis with bambu across Bulk, Single-Cell and Spatial Data", ""],
     ["Friday, 20 November", "11:00 AM", "12:30 PM", "080.08.09", "BioC Asia", "Workshop", "cellNexus and sccomp: From the Human Cell Atlas to insights", ""],
     ["Friday, 20 November", "11:00 AM", "2:30 PM", "080.07.08", "ABACBS", "Workshop", "Taxonomic profiling and MAG building from long-read metagenomics", ""],
